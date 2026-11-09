@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "torch"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantized-gemm-kernels"
+version = "0.1.0"
+description = "High-performance INT4/FP8 weight-unpacking matrix multiplication kernels with warp-level tiling"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.24.0",
+    "tabulate>=0.9.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]

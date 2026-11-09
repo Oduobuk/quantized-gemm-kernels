@@ -1,0 +1,8 @@
+build/
+*.so
+*.dylib
+*.egg-info/
+.pytest_cache/
+__pycache__/
+*.pyc
+.DS_Store
