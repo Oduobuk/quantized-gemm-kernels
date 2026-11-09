@@ -97,3 +97,4 @@ def test_cpp_python_parity_if_available():
 
     max_diff = torch.max(torch.abs(out_py - out_cpp)).item()
     assert max_diff < 1e-5, f"C++ and Python parity error: max diff = {max_diff}"
+

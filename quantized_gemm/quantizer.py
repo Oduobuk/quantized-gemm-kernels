@@ -172,3 +172,4 @@ class QuantizedLinear(nn.Module):
             f"bias={self.bias is not None}, group_size={self.group_size}, "
             f"compression=4x (INT4 vs FP16)"
         )
+

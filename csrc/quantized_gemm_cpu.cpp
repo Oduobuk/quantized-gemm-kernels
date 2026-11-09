@@ -93,3 +93,4 @@ torch::Tensor w4a16_gemm_forward(
 PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
     m.def("w4a16_gemm_forward", &w4a16_gemm_forward, "W4A16 Quantized GEMM Forward (CPU)");
 }
+
